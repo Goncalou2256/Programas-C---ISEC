@@ -1,0 +1,75 @@
+#include<stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+
+int main()
+{
+char disc;
+float n;
+system("clear");
+printf("Disciplinas:\n .  Português(P)\n .  Inglês(I)\n .  Matemática(M)\n");
+scanf("%c", &disc);
+disc = toupper(disc);
+if ( disc == 'P')
+{
+    printf("Introduza a nota da disciplina: \n");
+scanf("%f", &n);
+        if (n < 0.0)
+{
+    printf("Nota Recusada");
+    
+}
+if (n > 20.0)
+{
+    printf("Nota Recusada");
+}
+else
+{
+    printf("Na disciplina de Português tem %.0f Valores", n);
+}
+}
+else if ( disc == 'I')
+{
+    printf("Introduza a nota da disciplina: \n");
+scanf("%f", &n);
+        if (n < 0.0)
+{
+    printf("Nota Recusada");
+    
+}
+if (n > 20.0)
+{
+    printf("Nota Recusada");
+}
+else
+{
+    printf("Na disciplina de Inglês tem %.0f Valores", n);
+}
+}
+else if ( disc == 'M')
+{
+printf("Introduza a nota da disciplina: \n");
+scanf("%f", &n);
+if (n < 0.0)
+{
+    printf("Nota Recusada");
+    
+}
+if (n > 20.0)
+{
+    printf("Nota Recusada");
+}
+else
+{
+    printf("Na disciplina de Matematica tem %.0f Valores", n);
+}
+}
+else
+{
+    printf("Ola Putinha");
+}
+
+
+
+return 0.0;
+}
